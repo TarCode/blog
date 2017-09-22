@@ -23,16 +23,16 @@ class Template extends React.Component {
             marginTop: 0,
           }}
         >
-          <Link
+          <a
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={'/'}
+            href={'https://tarcode.github.io'}
           >
             Tarcode
-          </Link>
+          </a>
         </h1>
       )
     } else {
