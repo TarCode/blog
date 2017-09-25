@@ -54,20 +54,12 @@ Before we can access files on the device, we have to ask the user for permission
 ### iOS
 Add this to `ios/app_name/Info.plist`:
 
-```
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>Select an existing photo for us</string>
-    <key>NSCameraUsageDescription</key>
-    <string>Take a photo for us</string>
-
-```
+![React Native Cloudinary](iosperm.png)
 
 ### Android
 Add this to `android/app/src/AndroidManifest.xml`:
 
-```
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-```
+![React Native Cloudinary](androidperm.png)
 
 ## Step 5
 
