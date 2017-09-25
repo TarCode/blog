@@ -171,7 +171,9 @@ function uploadFile(file) {
 
 Once that's all done and dusted, run `react-native run-ios` or `react-native run-andoid` and upload your images to Cloudinary!!
 
-#👽 🤓 👾
+[The code exists on Github too](https://github.com/TarCode/react-native-cloudinary) 
+
+# 👽 🤓 👾
 
 
 
