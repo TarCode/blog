@@ -54,28 +54,39 @@ Before we can access files on the device, we have to ask the user for permission
 ### iOS
 Add this to `ios/app_name/Info.plist`:
 
-![React Native Cloudinary](/iosperm.png)
+![React Native Cloudinary](./iosperm.png)
 
 ### Android
 Add this to `android/app/src/AndroidManifest.xml`:
 
-![React Native Cloudinary](/androidperm.png)
+![React Native Cloudinary](./androidperm.png)
 
 ## Step 5
 
 This is the main component we use to do everything. 
 
 Our imports: 
-![imports](/imports.png)
+![imports](./imports.png)
 
 The component class: 
-![component](/comp.png)
+![component](./comp.png)
 
-The upload method: 
-![upload](/uploadmethod.png)
+Replace the Cloudinary name and upload preset in the upload method with your Cloudinary name and upload_preset: 
+
+![upload](./uploadmethod.png)
+
+To create an upload preset:
+
+Login to Cloudinary
+
+Click on the settings icon (Gear icon)
+
+Click on the Upload tab
+
+Scroll down to upload presets and click add upload preset. Use the upload preset name you just created.
 
 The styles: 
-![styles](/styles.png)
+![styles](./styles.png)
 
 
 ## Step 6
