@@ -25,8 +25,8 @@
       "path---hello-gatsby-974b275656b6904e7d61.js.map"
     ],
     "path---index": [
-      "path---index-6a06915cbb6fef979fe7.js",
-      "path---index-6a06915cbb6fef979fe7.js.map"
+      "path---index-30bbc7e4ff78e295a9cc.js",
+      "path---index-30bbc7e4ff78e295a9cc.js.map"
     ],
     "commons": [
       "commons-79a84f0b1b0d64b444fd.js",
@@ -39,10 +39,14 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-71689a40b150716ae1e9.js",
+      "app-4f563d1832373ff5ec40.js",
       "build-js-styles.css",
-      "app-71689a40b150716ae1e9.js.map",
+      "app-4f563d1832373ff5ec40.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---react-native-image-uploading": [
+      "path---react-native-image-uploading-ad7f1d6dac6c523e7974.js",
+      "path---react-native-image-uploading-ad7f1d6dac6c523e7974.js.map"
     ]
   }
 }
