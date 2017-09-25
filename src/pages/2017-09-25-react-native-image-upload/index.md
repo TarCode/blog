@@ -22,7 +22,11 @@ Now let's get down to business.🤓
 
 `npm install`
 
+Create the folder where we'll keep our main component (Which we'll render to Android and iOS):
+
 `mkdir app`
+
+Create the component file:
 
 `touch app/index.js`
 
@@ -63,7 +67,7 @@ Add this to `android/app/src/AndroidManifest.xml`:
 
 ## Step 5
 
-This is the main component we use to do everything. 
+This is the main component we use to do everything (`app/index.js`). 
 
 Our imports: 
 ![imports](./imports.png)
