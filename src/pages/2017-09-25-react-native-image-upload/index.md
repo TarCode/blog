@@ -54,110 +54,29 @@ Before we can access files on the device, we have to ask the user for permission
 ### iOS
 Add this to `ios/app_name/Info.plist`:
 
-![React Native Cloudinary](iosperm.png)
+![React Native Cloudinary](./iosperm.png)
 
 ### Android
 Add this to `android/app/src/AndroidManifest.xml`:
 
-![React Native Cloudinary](androidperm.png)
+![React Native Cloudinary](./androidperm.png)
 
 ## Step 5
 
-This is the main component we use to do everything. Copy it into `app/index.js` and update it with your cloudinary name and preset:
+This is the main component we use to do everything. 
 
-```
-import React, { Component } from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
-import ImagePicker from 'react-native-image-picker'
-import RNFetchBlob from 'react-native-fetch-blob'
+Our imports: 
+![imports](./imports.png)
 
-export default class extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            avatarSource: "",
-            uploadImage: false
-        }
-    }
+The component class: 
+![component](./comp.png)
 
-    render() {
-        return (
-            <View style={{
-                flex: 1,
-                flexDirection: 'column',
-                backgroundColor: "#FAFAFA",
-                alignItems: 'center',
-                justifyContent: "center"
-            }}>
-                <Text>React Native Image Upload with Cloudinary!</Text>
-                <TouchableOpacity onPress={() => {
-                    var options = {
-                        title: 'Select Avatar',
-                        customButtons: [
-                            { name: 'fb', title: 'Choose Photo from Facebook' },
-                        ],
-                        storageOptions: {
-                            skipBackup: true,
-                            path: 'images'
-                        }
-                    };
+The upload method: 
+![upload](./uploadmethod.png)
 
-                    this.setState({
-                        uploadingImg: true
-                    });
+The styles: 
+![styles](./styles.png)
 
-                    ImagePicker.showImagePicker(options, (response) => {
-                        console.log('Response = ', response);
-
-                        if (response.didCancel) {
-                            console.log('User cancelled image picker');
-                        }
-                        else if (response.error) {
-                            console.log('ImagePicker Error: ', response.error);
-                        }
-                        else if (response.customButton) {
-                            console.log('User tapped custom button: ', response.customButton);
-                        }
-                        else {
-                            let source = { uri: response.uri };
-
-                            uploadFile(response)
-                                .then(response => response.json())
-                                .then(result => {
-                                    this.setState({
-                                        avatarSource: { uri: result.secure_url },
-                                        uploadingImg: false
-                                    });
-                                })
-
-                        }
-                    });
-                }} style={{
-                    height: 80,
-                    width: 80,
-                    borderRadius: 40,
-                    backgroundColor: "#333",
-                    marginBottom: 20
-                }}>
-                    <Image source={this.state.avatarSource} style={{
-                        height: 80,
-                        width: 80,
-                        borderRadius: 40
-                    }} />
-                </TouchableOpacity>
-            </View>
-        )
-    }
-}
-
-function uploadFile(file) {
-    return RNFetchBlob.fetch('POST', 'https://api.cloudinary.com/v1_1/yourcloudinaryname/image/upload?upload_preset=yourcloudinarypreset', {
-        'Content-Type': 'multipart/form-data'
-    }, [
-            { name: 'file', filename: file.fileName, data: RNFetchBlob.wrap(file.origURL) }
-        ])
-}
-```
 
 ## Step 6
 
