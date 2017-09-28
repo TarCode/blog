@@ -24,9 +24,13 @@
       "path---hello-gatsby-974b275656b6904e7d61.js",
       "path---hello-gatsby-974b275656b6904e7d61.js.map"
     ],
+    "path---binary-search-tree": [
+      "path---binary-search-tree-7dda9a3b4adfcab9be79.js",
+      "path---binary-search-tree-7dda9a3b4adfcab9be79.js.map"
+    ],
     "path---index": [
-      "path---index-30bbc7e4ff78e295a9cc.js",
-      "path---index-30bbc7e4ff78e295a9cc.js.map"
+      "path---index-cd402e400748f30112d9.js",
+      "path---index-cd402e400748f30112d9.js.map"
     ],
     "commons": [
       "commons-79a84f0b1b0d64b444fd.js",
@@ -39,9 +43,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-4f563d1832373ff5ec40.js",
+      "app-1fdb2e2b0d5ddca5d17f.js",
       "build-js-styles.css",
-      "app-4f563d1832373ff5ec40.js.map",
+      "app-1fdb2e2b0d5ddca5d17f.js.map",
       "build-js-styles.css.map"
     ],
     "path---react-native-image-uploading": [
